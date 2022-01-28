@@ -5,7 +5,7 @@
 ![Made-with-tailwindcss](https://img.shields.io/badge/Made%20with-tailwindcss-%2306B6D4?style=plastic&logo=Tailwind%20CSS)
 
 # HOME
-<img width="1435" alt="barrel_roll_home" src="https://user-images.githubusercontent.com/69026725/151517700-2c1c27ff-1666-4019-8d90-7608efe24864.png">
+<img width="1435" alt="barrel-roll-home" src="https://user-images.githubusercontent.com/69026725/151539716-9f8cec51-2223-49a7-8edd-1971a4404280.png">
 
 # SEARCHING PAGE
 
