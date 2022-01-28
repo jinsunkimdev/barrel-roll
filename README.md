@@ -6,3 +6,9 @@
 
 # HOME
 <img width="1435" alt="barrel_roll_home" src="https://user-images.githubusercontent.com/69026725/151517700-2c1c27ff-1666-4019-8d90-7608efe24864.png">
+
+# SEARCHING PAGE
+
+# CONTACT 
+
+# MORE
