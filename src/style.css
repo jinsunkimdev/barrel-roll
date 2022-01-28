@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* external font file */
+@layer base{
+    @font-face{
+        font-family: 'Paladise';
+        src: url("fonts/Paladise Script.otf")
+    }
+    @font-face{
+        font-family: 'Paladise-Bonus';
+        src: url("fonts/Paladise  Bonus.otf")
+    }
+    @font-face{
+        font-family: 'Burtons';
+            src: url("fonts/Burtons.otf")
+    }
+    @font-face{
+        font-family: 'Burtons-Script';
+        src: url("fonts/Burtons Script.otf")
+    }
+}
+
