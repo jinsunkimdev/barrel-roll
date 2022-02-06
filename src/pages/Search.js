@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { HeaderNav } from "../components/Navbar";
-import axios from "axios";
+import Cocktail from "../components/Cocktail";
 
 const Search = () => {
   const [loading, setLoading] = useState(true);
@@ -24,18 +24,13 @@ const Search = () => {
       ) : (
         <div className="">
           {cocktail.map((cocktail) => (
-            <div key={cocktail.idDrink}>
-              <div className="flex flex-col">
-                <img src={cocktail.strDrinkThumb} className="w-52" alt="" />
-                <h1 className="text-2xl text-comfort-orange">
-                  {cocktail.strDrink}
-                </h1>
-                <ul>
-                  <li>{cocktail.strAlcoholic}</li>
-                  <li>{cocktail.strCategory}</li>
-                </ul>
-              </div>
-            </div>
+            <Cocktail
+              key={cocktail.idDrink}
+              drinkThumb={cocktail.strDrinkThumb}
+              drinkName={cocktail.strDrink}
+              alcoholic={cocktail.strAlcoholic}
+              category={cocktail.strCategory}
+            />
           ))}
         </div>
       )}

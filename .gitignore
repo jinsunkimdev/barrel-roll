@@ -1,6 +1,7 @@
 # Custom setting
 images/
 fonts/
+.env
 ### macOS ###
 # General
 .DS_Store
