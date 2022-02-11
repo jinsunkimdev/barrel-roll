@@ -9,15 +9,15 @@ const Cocktail = ({
   category,
 }) => {
   return (
-    <div key={drinkId}>
+    <div key={drinkId} className="bg-white rounded-3xl">
       <div className="flex flex-col">
         <img src={drinkThumb} className="w-52" alt={drinkName} />
-        <Link to={`/detail/${id}`} className="text-2xl text-comfort-orange">
+        <Link to={`/detail/${id}`} className="text-2xl text-pure-white">
           {drinkName}
         </Link>
         <ul>
-          <li>{alcoholic}</li>
-          <li>{category}</li>
+          <li className="text-pure-white">{alcoholic}</li>
+          <li className="text-pure-white">{category}</li>
         </ul>
       </div>
     </div>

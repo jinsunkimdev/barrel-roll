@@ -1,38 +1,88 @@
 import React from "react";
 import "../style.css";
+import tw from "tailwind-styled-components";
 import { Link } from "react-router-dom";
 import { HeaderNav } from "../components/Navbar";
 
 const Maincontainer = () => {
   return (
-    <div className="flex flex-col items-center content-center justify-center h-5/6">
-      <h3 className="mb-3 text-3xl text-center cursor-default font-burtons text-pure-white">
-        With us, you can find your favourite
-      </h3>
-      <h1 className="font-bold text-center cursor-default font-burtons text-9xl text-comfort-orange">
-        COCKTAIL
-      </h1>
-      <p className="w-3/6 mb-4 text-center cursor-default font-burtons2 text-pure-white">
+    <MaincontainerDiv>
+      <MainTitle>With us, you can find your favourite</MainTitle>
+      <MainWord>COCKTAIL</MainWord>
+      <MainPhrase>
         shot aberlour gummy and coke snowball aberfeldy harvey wallbanger. Oban
         four horsemen critty bo old rip van winkle negroni, bloody aztec, crown
         royal paradise champagne cocktail.ro rojo.
-      </p>
+      </MainPhrase>
       <Link to="/search">
-        <button className="px-4 py-2 text-3xl font-bold text-black rounded-full bg-pure-white font-burtons2 opacity-60 ease-in duration-200 hover:opacity-100">
-          Get Started
-        </button>
+        <MainButton>Get Started</MainButton>
       </Link>
-    </div>
+    </MaincontainerDiv>
   );
 };
 
 const Home = () => {
   return (
-    <div className="relative h-screen bg-[url('./images/bar-498420_1920.jpeg')] bg-cover bg-center bg-no-repeat App">
+    <HomeContainer>
       <HeaderNav />
       <Maincontainer />
-    </div>
+    </HomeContainer>
   );
 };
 
+//styled components
+const MaincontainerDiv = tw.div`
+flex
+flex-col
+items-center
+content-center
+justify-center
+h-5/6
+`;
+const MainTitle = tw.h3`
+mb-3
+text-3xl
+text-center
+cursor-default
+font-burtons
+text-pure-white
+`;
+const MainWord = tw.h1`
+font-bold
+text-center
+cursor-default
+font-burtons
+text-9xl
+text-comfort-orange
+`;
+const MainPhrase = tw.p`
+w-3/6
+mb-4
+text-center
+cursor-default
+font-burtons2
+text-pure-white
+`;
+const MainButton = tw.button`
+px-4
+py-2
+text-3xl
+font-bold
+text-black
+rounded-full
+bg-pure-white
+font-burtons2
+opacity-60
+ease-in
+duration-200
+hover:opacity-100
+`;
+const HomeContainer = tw.div`
+relative
+h-screen
+bg-[url('./images/bar-498420_1920.jpeg')]
+bg-cover
+bg-center
+bg-no-repeat 
+`;
 export default Home;
